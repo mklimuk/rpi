@@ -94,10 +94,11 @@ import "C"
 import "unsafe"
 
 import (
-	"github.com/rogpeppe/rog-go/tree/master/exp/callback"
 	"errors"
 	"fmt"
 	"sync"
+
+	"github.com/rogpeppe/rog-go/exp/callback"
 )
 
 const (
