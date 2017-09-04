@@ -1,9 +1,9 @@
 package rpi
 
 /*
-#cgo LDFLAGS: -lwiringPi
+#cgo -L ./lib LDFLAGS: -lwiringPi
 
-#include <wiringPi.h>
+#include <lib/wiringPi/wiringPi/wiringPi.h>
 #include <stdio.h>
 #include <stdlib.h>
 #define nil ((void*)0)
