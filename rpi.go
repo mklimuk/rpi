@@ -1,7 +1,7 @@
 package rpi
 
 /*
-#cgo -L ./lib LDFLAGS: -lwiringPi
+#cgo LDFLAGS: -L${SRCDIR}/lib -lwiringPi
 
 #include <lib/wiringPi/wiringPi/wiringPi.h>
 #include <stdio.h>
