@@ -28,7 +28,7 @@ endif
 
 #DEBUG	= -g -O0
 DEBUG	= -O3
-CC	= gcc
+CC = arm-linux-gnueabihf-gcc-6
 INCLUDE	= -I/usr/local/include
 CFLAGS	= $(DEBUG) -Wall $(INCLUDE) -Winline -pipe
 
@@ -54,7 +54,7 @@ OBJ	=	$(SRC:.c=.o)
 
 BINS	=	$(SRC:.c=)
 
-all:	
+all:
 	$Q cat README.TXT
 	$Q echo "    $(BINS)" | fmt
 	$Q echo ""
@@ -107,11 +107,11 @@ isr-osc:	isr-osc.o
 
 nes:	nes.o
 	$Q echo [link]
-	$Q $(CC) -o $@ nes.o $(LDFLAGS) $(LDLIBS) 
+	$Q $(CC) -o $@ nes.o $(LDFLAGS) $(LDLIBS)
 
 rht03:	rht03.o
 	$Q echo [link]
-	$Q $(CC) -o $@ rht03.o $(LDFLAGS) $(LDLIBS) 
+	$Q $(CC) -o $@ rht03.o $(LDFLAGS) $(LDLIBS)
 
 pwm:	pwm.o
 	$Q echo [link]

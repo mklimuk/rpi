@@ -37,7 +37,7 @@ DYNAMIC=libwiringPi.so.$(VERSION)
 #DEBUG	= -g -O0
 DEBUG	= -O2
 #CC	= gcc
-CC=arm-linux-gnueabihf-gcc-4.9
+CC = arm-linux-gnueabihf-gcc-6
 INCLUDE	= -I.
 DEFS	= -D_GNU_SOURCE
 CFLAGS	= $(DEBUG) $(DEFS) -Wformat=2 -Wall -Wextra -Winline $(INCLUDE) -pipe -march=armv7-a -fPIC
